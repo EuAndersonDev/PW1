@@ -1,0 +1,26 @@
+.container-sobrenos h1 {
+    font-size: 36px;
+}
+.container-sobrenos {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.container-sobrenos p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.container-sobrenos ul {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.container-sobrenos li {
+    color: black;
+}
