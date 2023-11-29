@@ -1,0 +1,139 @@
+.ranking-main {
+    
+    border-radius: 15px;
+    width: calc(100vw - 355px);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+#principal {
+    display: flex;
+    flex-direction: row;
+}
+
+.ranking {
+
+    width: 90%;
+    height: 90%;
+
+    overflow: auto;
+}
+
+.ranking::-webkit-scrollbar{
+    display: none;
+}
+
+.XP {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.XP span{
+    color: #07BEB8;
+}
+
+.ranker-user {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.ranker-user img {
+    width: 100px;
+
+}
+
+
+
+/* sidebar*/
+.sidebar{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid rgba(0, 0, 0, 0.15);
+    left: 0;
+    position: relative;
+}
+
+.sidebar-locate{
+    width: 150px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sidebar-learn,.sidebar-statistics,.sidebar-friends,.sidebar-profile{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar-square{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    background: rgba(7, 190, 184, 0.20);
+    border-radius: 10px;
+    border: 2px solid #07BEB8;
+}
+
+.sidebar-square svg{
+    position: relative;
+    left: 8px;
+}
+
+.sidebar-friends .sidebar-square svg{
+    position: relative;
+    left: 5px;
+}
+
+.on-locate{
+    animation: on 0.5s ease-in-out;
+    width: 150px;
+    margin-right: -100px; 
+    transition-delay: 0.5s;
+}
+
+.off-locate{
+    animation: off 0.5s ease-in-out;
+}
+
+@keyframes on {
+    0%{
+        width: 40px;
+        margin-right: 0;    
+    }
+    100%{
+        width: 150px;
+        margin-right: -100px; 
+    }
+}
+
+@keyframes off {
+    0%{
+        width: 150px;
+        margin-right: -100px; 
+    }
+    100%{
+        width: 40px;
+        margin-right: 0;    
+    }
+}

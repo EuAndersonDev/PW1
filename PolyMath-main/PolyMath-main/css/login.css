@@ -1,0 +1,94 @@
+header{
+    background: #07BEB8;
+    height: 60px;
+    
+}
+
+.logo-login {
+    margin-left: 25px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    background: #07BEB8;
+    height: 60px;
+    margin: auto;
+}
+
+main{
+    height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 455px;
+    height: 485px;
+    border: solid 1px #07BEB8;
+    border-radius: 15px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.input {
+    width: 95%;
+    display: flex;
+    margin: 35px;
+    border-bottom: solid 2px #07BEB8;
+}
+
+.btn-login {
+    font-family: 'Baloo 2', sans-serif;
+    background: #c1eaea;
+    font-size: 20px;
+    width: 135px;
+    border: solid 1px #07BEB8;
+    border-radius: 5px;
+    color: rgb(49, 49, 49);
+    cursor: pointer;
+}
+
+.btn{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span{
+    color: #07BEB8;
+}
+
+.card-login a {
+    color: black;
+    font-family: 'Baloo 2', sans-serif;
+}
+
+.card-login h1{
+    color: #07BEB8;
+    font-size: 50px;
+}
+
+.input input{
+    border: none;
+    margin-left: 10px;
+    background-color: transparent;
+    outline: none;
+    color: rgb(49, 49, 49);
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

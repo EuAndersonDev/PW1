@@ -1,0 +1,111 @@
+h1{
+    font-size: 20px;
+}
+
+h4{
+    font-weight: 100;
+}
+
+h5{
+    font-weight: normal;
+}
+
+.modules{
+    float: right;
+    margin-right: 20%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.module{
+    width: 500px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.30);
+    z-index: 1;
+}
+
+.line-module{
+    width: 2px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.30);
+}
+
+.lessons{
+    position: relative;
+    left: -25%;
+}
+
+.lesson{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-block: 35px;
+    cursor: pointer;
+}
+
+.learn-img{
+    width: 40px;
+    height: 40px;
+    background: url("../imgs/Learn.jpeg");
+    background-size: 100%;
+}
+
+.lock-img{
+    width: 40px;
+    height: 40px;
+    background: url("../imgs/Lock.jpeg");
+    background-size: 100%;
+}
+
+
+.uncomplete-module{
+    border: none;
+}
+
+.line-on{
+    width: 2px;
+    height: 0px;
+    background: #0a8552;
+    animation: lines 1s linear;
+    z-index: 5;
+}
+
+.complete-module{
+    width: 99%;
+    height: 0px;
+    margin-bottom: -4px;
+    border-radius: 5px;
+    animation: module 1s linear;
+    border-top: 4px solid#0EBE75;
+    border-left: 4px solid#0EBE75;
+    border-right: 4px solid#0EBE75;
+    z-index: 10;
+}
+
+@keyframes module {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 350px;
+        margin-bottom: -350px;
+    }
+}
+
+@keyframes lines {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 100%;
+    }
+}
